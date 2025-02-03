@@ -2,10 +2,14 @@ let scoreJogador = 0
 let scoreMaquina = 0
 
 const imagemEscolha = {
+    0: "icons/rock-paper-scissors.png",
     1: "icons/paper.png",
     2: "icons/rock.png",
     3: "icons/scissors.png"
 };
+
+document.getElementById("escolhaUsuario").src = imagemEscolha[0];
+document.getElementById("escolhaMaquina").src = imagemEscolha[0];
 
 document.getElementById("papel").addEventListener("click", () => verificarBotao(1))
 document.getElementById("pedra").addEventListener("click", () => verificarBotao(2))
@@ -56,7 +60,7 @@ function encerrar(){
     scoreJogador = 0
     scoreMaquina = 0
     document.getElementById("mensagem").textContent = ""
-    document.getElementById("escolhaUsuario").src = "";
-    document.getElementById("escolhaMaquina").src = "";
+    document.getElementById("escolhaUsuario").src = imagemEscolha[0];
+    document.getElementById("escolhaMaquina").src = imagemEscolha[0];
     atualizarPlaca();
 }
