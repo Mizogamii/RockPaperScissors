@@ -22,6 +22,19 @@ h1{
     color: aliceblue;
 }
 
+button{
+    background-color: red;
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: "Inter", serif;
+    margin: 20px auto;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
 img{
     width: 5rem;
     height: 5rem;   
@@ -60,7 +73,7 @@ img{
 }
 
 .choice{
-    border: 10px solid #f2fa7d;
+    border: 5px solid #6a6a81;
     border-radius: 50%;
     padding: 1rem;
     display: inline-block;
@@ -72,7 +85,17 @@ img{
 }
 
 .choice:hover{
-    background: #f2fa7d;
+    background: #6a6a81;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.mensagemFinal{
+    color:aliceblue;
+    padding: 1.5rem;
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-size: 1.5rem;;
+    background-color: #191970;
+    text-align: center;
 }
