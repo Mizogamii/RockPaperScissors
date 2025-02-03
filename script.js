@@ -1,6 +1,12 @@
 let scoreJogador = 0
 let scoreMaquina = 0
 
+const imagemEscolha = {
+    1: "icons/paper.png",
+    2: "icons/rock.png",
+    3: "icons/scissors.png"
+};
+
 document.getElementById("papel").addEventListener("click", () => verificarBotao(1))
 document.getElementById("pedra").addEventListener("click", () => verificarBotao(2))
 document.getElementById("tesoura").addEventListener("click", () => verificarBotao(3))
@@ -13,6 +19,9 @@ function escolhaMaquina(){
 function contadorPontos(botaoClicado){
     let numeroAleatorio = escolhaMaquina();
     const mensagem = document.getElementById("mensagem")
+
+    document.getElementById("escolhaUsuario").src = imagemEscolha[botaoClicado]
+    document.getElementById("escolhaMaquina").src = imagemEscolha[numeroAleatorio]
 
     if(botaoClicado == numeroAleatorio){ 
         scoreJogador++
@@ -47,5 +56,7 @@ function encerrar(){
     scoreJogador = 0
     scoreMaquina = 0
     document.getElementById("mensagem").textContent = ""
+    document.getElementById("escolhaUsuario").src = "";
+    document.getElementById("escolhaMaquina").src = "";
     atualizarPlaca();
 }
