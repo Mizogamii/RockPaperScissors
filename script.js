@@ -12,17 +12,20 @@ function escolhaMaquina(){
 
 function contadorPontos(botaoClicado){
     let numeroAleatorio = escolhaMaquina();
-    console.log(numeroAleatorio)
+    const mensagem = document.getElementById("mensagem")
 
     if(botaoClicado == numeroAleatorio){ 
         scoreJogador++
         scoreMaquina++
+        mensagem.textContent = "Empate"
     }else if((botaoClicado == 1 && numeroAleatorio == 2) || (botaoClicado == 2 && numeroAleatorio == 3) || (botaoClicado == 3  && numeroAleatorio == 1)){
         scoreJogador++
         console.log("Jogador")
+        mensagem.textContent = "Parabéns! A vitória é sua!!!"
     }else{
         scoreMaquina++
         console.log("Maquina")
+        mensagem.textContent = "Infelizmente meu anjo! Tente novamente"
     }
     
     atualizarPlaca()
@@ -31,6 +34,7 @@ function contadorPontos(botaoClicado){
 function verificarBotao(botao){
     contadorPontos(botao)
     console.log("Botão clicado: ", botao)
+
 }
 
 function atualizarPlaca(){
@@ -38,3 +42,9 @@ function atualizarPlaca(){
     document.getElementById("maquinaScore").textContent = scoreMaquina
 }
 
+function encerrar(){
+    console.log("Encerrar")
+    scoreJogador = 0
+    scoreMaquina = 0
+    atualizarPlaca();
+}
