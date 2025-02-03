@@ -2,7 +2,7 @@ let scoreJogador = 0
 let scoreMaquina = 0
 
 const imagemEscolha = {
-    0: "icons/rock-paper-scissors.png",
+    0: "icons/all.png",
     1: "icons/paper.png",
     2: "icons/rock.png",
     3: "icons/scissors.png"
