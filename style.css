@@ -105,6 +105,11 @@ img{
     border-radius: 50%;
     padding: 1rem;
     display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    background-position: center;
+    display: inline-block;
 }
 
 .content{
