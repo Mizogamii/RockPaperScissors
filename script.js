@@ -17,7 +17,7 @@ function contadorPontos(botaoClicado){
     if(botaoClicado == numeroAleatorio){ 
         scoreJogador++
         scoreMaquina++
-        mensagem.textContent = "Empate"
+        mensagem.textContent = "Empate! Ponto para os dois!"
     }else if((botaoClicado == 1 && numeroAleatorio == 2) || (botaoClicado == 2 && numeroAleatorio == 3) || (botaoClicado == 3  && numeroAleatorio == 1)){
         scoreJogador++
         console.log("Jogador")
@@ -46,5 +46,6 @@ function encerrar(){
     console.log("Encerrar")
     scoreJogador = 0
     scoreMaquina = 0
+    document.getElementById("mensagem").textContent = ""
     atualizarPlaca();
 }
