@@ -37,3 +37,4 @@ function atualizarPlaca(){
     document.getElementById("jogadorScore").textContent = scoreJogador
     document.getElementById("maquinaScore").textContent = scoreMaquina
 }
+
