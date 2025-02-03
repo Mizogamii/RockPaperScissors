@@ -13,17 +13,25 @@
             <img src="./icons/rock-paper-scissors.png" alt="Imagem pedra papel tesoura">
         </figure>
     </header>
-    <p>Aperte nos botões para jogar</p>
+    <div class="tabelaScore">
+        <div id="jogador" class="badge">Jogador</div>
+        <div id="maquina" class="badge">Máquina</div>
+        <span id="jogadorScore">0</span>:<span id="maquinaScore">0</span>
+    </div>
 
-    <button>
-        <img src="icons/paper.png" alt="Imagem papel">
-    </button>
-    <button>
-        <img src="icons/rock.png" alt="Imagem pedra">
-    </button>
-
-    <button>
-        <img src="icons/scissors.png" alt="Imagem tesoura">
-    </button>
+    <div class="choices">
+        <div class="choice">
+            <img id="papel" src="icons/paper.png" alt="Imagem papel">
+        </div>
+        <div class="choice">
+            <img id="pedra" src="icons/rock.png" alt="Imagem pedra">
+        </div>
+        <div class="choice">
+                <img id="tesoura" src="icons/scissors.png" alt="Imagem tesoura">
+        </div>
+    </div>
+        
+    
+    <script src="script.js"></script>
 </body>
 </html>
