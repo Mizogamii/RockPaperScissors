@@ -99,3 +99,25 @@ img{
     background-color: #191970;
     text-align: center;
 }
+
+.imagemEscolha{
+    border: 5px solid #6a6a81;
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.escolhas {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
