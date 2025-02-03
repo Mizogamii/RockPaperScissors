@@ -13,11 +13,27 @@
             <img src="./icons/rock-paper-scissors.png" alt="Imagem pedra papel tesoura">
         </figure>
     </header>
-    <div class="tabelaScore">
-        <div id="jogador" class="badge">Jogador</div>
-        <div id="maquina" class="badge">Máquina</div>
-        <span id="jogadorScore">0</span>:<span id="maquinaScore">0</span>
+    <div class="content">
+        <div class="escolhas">
+            <div>
+                <img id="escolhaUsuario" class="imagemEscolha" src="" alt="Imagem escolha do usuário">
+            </div>
+
+            <div class="tabelaScore">
+                <div id="jogador" class="badge">Jogador</div>
+                <div id="maquina" class="badge">Máquina</div>
+                <span id="jogadorScore">0</span>:<span id="maquinaScore">0</span>
+            </div>
+
+            <div>
+                <img id="escolhaMaquina" class="imagemEscolha" src="" alt="Imagem escolha da máquina">
+            </div>
+            
+        </div>
     </div>
+    
+
+    
 
     <div class="choices">
         <div class="choice">
@@ -35,7 +51,7 @@
         <button id="encerrar" onclick="encerrar()">Encerrar jogo</button>
 
     </div>
-    
+
     <div class="mensagemFinal">
         <p id="mensagem"></p>
     </div>
