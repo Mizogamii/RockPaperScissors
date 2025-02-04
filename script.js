@@ -31,14 +31,17 @@ function contadorPontos(botaoClicado){
         scoreJogador++
         scoreMaquina++
         mensagem.textContent = "Empate! Ponto para os dois!"
+        mensagem.style.color = "#f0f8ff"
     }else if((botaoClicado == 1 && numeroAleatorio == 2) || (botaoClicado == 2 && numeroAleatorio == 3) || (botaoClicado == 3  && numeroAleatorio == 1)){
         scoreJogador++
         console.log("Jogador")
-        mensagem.textContent = "Parabéns! A vitória é sua!!!"
+        mensagem.textContent = "Parabéns! Ganhou!"
+        mensagem.style.color = "#00ff3c"
     }else{
         scoreMaquina++
         console.log("Maquina")
         mensagem.textContent = "Infelizmente meu anjo! Tente novamente"
+        mensagem.style.color = "#ff0d00"
     }
     
     atualizarPlaca()
