@@ -23,7 +23,7 @@ function escolhaMaquina(){
 function contadorPontos(botaoClicado){
     let numeroAleatorio = escolhaMaquina();
     const mensagem = document.getElementById("mensagem")
-
+    
     document.getElementById("escolhaUsuario").src = imagemEscolha[botaoClicado]
     document.getElementById("escolhaMaquina").src = imagemEscolha[numeroAleatorio]
 
@@ -62,7 +62,7 @@ function encerrar(){
     console.log("Encerrar")
     scoreJogador = 0
     scoreMaquina = 0
-    document.getElementById("mensagem").textContent = ""
+    mensagem.style.color = "#191970"
     document.getElementById("escolhaUsuario").src = imagemEscolha[0];
     document.getElementById("escolhaMaquina").src = imagemEscolha[0];
     atualizarPlaca();
